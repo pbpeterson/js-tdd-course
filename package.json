@@ -4,6 +4,8 @@
   "description": "Nossa biblioteca do curso JS com tdd na pratica",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint scr/*.js",
+    "prepush":"npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,14 @@
     "tdd"
   ],
   "author": "Peterson Pereira <petersonbozza7@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-google": "^0.14.0",
+    "husky": "^6.0.0"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.22.1"
+  }
 }
