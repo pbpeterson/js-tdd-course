@@ -1,3 +1,4 @@
 const a = 1;
 console.log(b);
-const %
+const %asa
+asa

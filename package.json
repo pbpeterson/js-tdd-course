@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint scr/*.js",
+    "pre-push": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,11 +26,5 @@
   },
   "dependencies": {
     "eslint-plugin-import": "^2.22.1"
-  },
-
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run lint" //executado ANTES do push
-    }
   }
 }
